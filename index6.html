@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title> Пекарня Николая </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style6.css" />
+</head>
+<body>
+    <div>
+        <h1>Стоймость заказа</h1>
+
+        <form>
+            <label>Телефон: </label>
+            <select name="prodType">
+                <option value="1">Xiaomi 12</option>
+                <option value="2">Samsung S21 </option>
+                <option value="3">iPhone 13</option>
+            </select>
+
+            <div id="radios">
+                 Выберите конфигурацию смартфона<br>
+                <label><input type="radio" name="prodOptions" value="option1" checked="checked">S21</label>
+                <label><input type="radio" name="prodOptions" value="option2" >S21 Ultra</label>
+            </div>
+
+            <div id="checkboxes">
+                 Выберите цвет и аксессуары  смартфона<br>
+
+                <label><input type="checkbox" name="prodM">Синий</label>
+                <label><input type="checkbox" name="prodM2">Чехол</label>
+                <label><input type="checkbox" name="prodM3">Защитная пленка</label>
+            </div>
+            <p></p>
+
+            <div>Количество:<br></div>
+            <input id="input" type="number" min="0" max="10" step="1" value="0">
+            <br>
+            <p></p>
+            Цена:<div id="prodPrice"></div>
+            <p></p>
+            <button id="button1">Оплатить</button>
+            
+
+        </form>
+        <script src="script.js"></script>
+</body>
+</html>
